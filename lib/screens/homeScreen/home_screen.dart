@@ -93,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        print('Ali');
+                        Navigator.pushNamed(context, '/addTask');
                       },
                       child: const CircleAvatar(
                           radius: 20.0,

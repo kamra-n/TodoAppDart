@@ -1,3 +1,5 @@
+import 'package:assignment_four/screens/AddTaskScreen/add_task_screen.dart';
+import 'package:assignment_four/screens/OnBoardingScreen/onboarding_screen.dart';
 import 'package:assignment_four/screens/homeScreen/home_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +18,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const OnboardingScreen(),
+        '/home': (context) => const HomeScreen(),
+        '/addTask': (context) => const AddTaskScreen(),
+      },
     );
   }
 }

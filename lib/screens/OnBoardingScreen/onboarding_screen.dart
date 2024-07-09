@@ -127,7 +127,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             buttonText: _sliderNumber == 2 ? 'Create Note' : 'Next',
             onPressed: () {
               _sliderNumber == 2
-                  ? print('hiiii Kamran')
+                  ? Navigator.pushNamed(context, '/home')
                   : setState(() {
                       _sliderNumber < 2 ? _sliderNumber++ : '';
                     });
